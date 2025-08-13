@@ -1,4 +1,4 @@
-# Binance LLM Research Stack
+# LLM Research Stack
 
 A GitHub-ready template to showcase research and engineering capabilities for a role focusing on **LLMs, RAG, SFT, reward modeling/RLHF, evaluation**, and **AI agent** use-cases in crypto/fintech.
 
@@ -35,10 +35,10 @@ pip install -r requirements.txt
 docker compose -f docker/compose.yaml up -d qdrant
 
 # Ingest sample docs
-python -m binance_llm.rag.ingest --collection academy --docs data/sample_docs
+python -m llm.rag.ingest --collection academy --docs data/sample_docs
 
 # Run API
-uvicorn binance_llm.api.main:app --reload --port 8000
+uvicorn llm.api.main:app --reload --port 8000
 ```
 
 Open http://localhost:8000/docs for interactive API, then call `POST /chat`.
@@ -48,8 +48,8 @@ Open http://localhost:8000/docs for interactive API, then call `POST /chat`.
 ## Repo Layout
 
 ```
-binance-llm-research-stack/
-├── binance_llm/               # Python package
+llm-research-stack/
+├── lm/                        # Python package
 │   ├── api/                   # FastAPI app
 │   ├── rag/                   # Retrieval Augmented Generation pipeline
 │   ├── agents/                # Tool-using agents for crypto research
@@ -71,8 +71,8 @@ binance-llm-research-stack/
 
 ## What to Build Next
 
-- Replace sample docs with **Binance product/infra docs** (if permitted) to demo knowledge grounding.
-- Add **finetuned adapters** for the target domain using `binance_llm/sft/train_sft.py`.
+- Replace sample docs with **product/infra docs** (if permitted) to demo knowledge grounding.
+- Add **finetuned adapters** for the target domain using `llm/sft/train_sft.py`.
 - Train a lightweight **reward model** for answer helpfulness, integrate PPO loop.
 - Extend the **agent** with more tools (on-chain data, risk heuristics, compliance flags).
 
