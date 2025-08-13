@@ -1,0 +1,2 @@
+Basic terms: spot, futures, margin, funding rate, maker/taker fees, KYC/AML, and cold storage. Educational
+content can be grounded to avoid hallucinations and keep explanations consistent with policy.

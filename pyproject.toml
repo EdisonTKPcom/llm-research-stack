@@ -1,0 +1,22 @@
+[project]
+name = "binance-llm-research-stack"
+version = "0.1.0"
+description = "Template stack for LLM/RAG/SFT/RLHF/Agents in crypto/fintech."
+authors = [{name="Your Name", email="you@example.com"}]
+requires-python = ">=3.10"
+
+[tool.ruff]
+line-length = 100
+select = ["E","F","I","UP","B","C4"]
+ignore = ["E203","E266","E501"]
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.mypy]
+python_version = "3.10"
+ignore_missing_imports = true
+strict_optional = false
+warn_unused_ignores = true
+disallow_untyped_defs = true

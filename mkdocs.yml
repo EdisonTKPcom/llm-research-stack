@@ -1,0 +1,9 @@
+site_name: Binance LLM Research Stack
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - Architecture: architecture.md
+  - Safety: safety.md
+  - Roadmap: roadmap.md
+  - API: api.md

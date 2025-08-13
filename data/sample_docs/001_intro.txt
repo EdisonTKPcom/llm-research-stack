@@ -1,0 +1,3 @@
+Cryptocurrency is a form of digital asset secured by cryptography. Centralized exchanges provide order books,
+custody, and liquidity, while decentralized exchanges rely on smart contracts. Risk management includes asset
+segregation, proof-of-reserves attestations, and monitoring liquidation risk for margin products.
